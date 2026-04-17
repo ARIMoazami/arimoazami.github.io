@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0"/>
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio Showcase - Alireza Moazami</title>
+</head>
+<body id="body">
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio Work</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="exp.html">Experience</a></li>
+            <!--<li><a href="#">About Me</a></li>-->
+            <li><a href="#">View My CV</a></li>
+        </ul>
+    </nav>
+
+    <div class="text1">
+        <h2>Portfolio Work</h2>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-inner" id="modal-open">
+            <div class="portfolioWork">
+                <video controls src="videos/FinalVideo.mp4" width="50" height="10" type="video/mp4"></video>
+                <div class="text2">
+
+                <p><b>Project Description:</b> When worlds collide unexpectedly, the demons invade and a battle on two fronts begins.
+		        Two unexpected heroes emerge, the unstoppable Doom Slayer and the American hero Duke Nukem must work together to save humanity and
+		        discover a way back to fix the rift between their worlds.</p>
+
+                <br/>
+
+                <p><b>Key Features:</b></p>
+
+                <p><span style="color:orange;">Coop Gameplay:</span> Players can work together to complete puzzles, battle enemies and slay bosses.</p>
+                <p><span style="color:orange;">Game Enemies:</span> Players will be able to experience enemies from both worlds.</p>
+                <p><span style="color:orange;">Unique Story:</span> As players fight back the enemies, they will be able to slowly discover what really happened.</p>
+                <p><span style="color:orange;">Iconic Music/SFX:</span> Iconic game music and SFX that players will remember are included.</p>
+                <p><span style="color:orange;">Unique Character Gameplay: </span> Each player will experience gameplay differently based on their character DOOM GUY camera movement
+                will be locked on the x-axis whereas Duke Nukem camera movement will have both axes unlocked.</p>
+                
+
+
+                <a href="documents/Doom&Duke_GDD.pdf">Game Design Document</a>
+
+                </div>
+
+        
+    </div>
+            <button id="closeModal">Close Modal</button>
+        </div>
+    </div>
+
+
+    <section class="type1">
+        <div class="grid-container">
+            <div class="wrapper">
+                <div class="image">
+                    <a href="D&D.html"><img src="images/DOOM.jpg" alt="" width="500" height="300" style="display: block;">
+                    <div class="content">
+                        <h1>Doom and Duke: Save The World!</h1>
+                        <p>Doom Guy & Duke Nukem team up in this short local coop prototype game made in UE5.</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="wrapper">
+                <div class="image">
+                    <a href="#" id="myBtn"><img src="images/DOOM.jpg" alt="" width="500" height="300" style="display: block;">
+                        <div id="myModal" class="modal">
+
+                            <!-- Modal content -->
+                             <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <p>Some text in the Modal..</p>
+                                <h2 style="font-style: italic;">DOOM and Duke: Save The World!</h2>
+                            </div>
+
+                        </div>
+                    <div class="content">
+                        <h1>Doom and Duke: Save The World!</h1>
+                        <p>Doom Guy & Duke Nukem team up in this short local coop prototype game made in UE5.</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <script src="transition.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

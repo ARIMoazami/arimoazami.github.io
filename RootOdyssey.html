@@ -1,70 +1,54 @@
-<!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Root Odyssey Video</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0"/>
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio Showcase Page</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio Work</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="exp.html">Experience</a></li>
+            <!--<li><a href="#">About Me</a></li>-->
+            <li><a href="#">View My CV</a></li>
+        </ul>
+    </nav>
 
-		<!-- Header -->
-			<header id="header">
-				<a href="index.html" class="title">Alireza Moazami</a>
-				<nav>
-					<ul>
-						<li><a href="index.html">HOME</a></li>
-						<!---li><a href="generic.html" class="active">My Experiences</a></!---li>
-						<!----li><a href="elements.html">Elements</a></!--li-->
-					</ul>
-				</nav>
-			</header>
+    <div class="text1">
+        <h2 style="font-style: italic;">Root Odyssey</h2>
+    </div>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <div class="portfolioWork">
+        <video controls src="videos/RO.mp4" width="1400" height="800" type="video/mp4"></video>
 
-				<!-- Main -->
-				<section id="main" class="wrapper">
-					<div class="inner">
-						<h1 class="major">Root Odyssey Gameplay Video</h1>
-						<video width="1280" height="" controls>
-							<source src="videos/RO.mp4" type="video/mp4">
-						</video>
-						<p>This video displays gameplay from the cute and cozy Root Odyssey game.<p>
-						</p>The player starts with a handful of money and will have access to the farm shop, which allows them to purchase not just various vegtables but farm plot upgrades as well.
-						The player can use the number keys to navigate the hotbar and switch between which vegtable they wish to plant. There is an inventory system which can be used in case of a large
-						stockpile of vegtables.
+        <div class="text2">
+        <p>This video displays gameplay from the cute and cozy farm game.</p>
 
-						</p>Once the vegtables have been planted the player will have to wait until their growth cycle has completed after which the vegtables will pop out from the ground
-						and once collected will instantly reward the player with money.</p>
-						<p>This was designed and created with 5 others in a very short 2 day game jam.</p>
-					</div>
-				</section>
-			</div>
+        <p><b>Game Description:</b> The player starts with a handful of money and will have access to the farm shop, which allows them to purchase not just various vegtables but farm plot upgrades as well. 
+            The player can use the number keys to navigate the hotbar and switch between which vegtable they wish to plant. 
+            There is an inventory system which can be used in case of a large stockpile of vegtables.</p>
 
-		<!-- Footer -->
-			<footer id="footer" class="wrapper alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; All rights reserved.</li><li></a></li>
-					</ul>
-				</div>
-			</footer>
+        <p>Once the vegtables have been planted the player will have to wait until their growth cycle has completed after which the vegtables will pop out from 
+            the ground and once collected will instantly reward the player with money.</p>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        <p>This was designed and created with 5 others in a very short 2 day game jam.</p>
 
-	</body>
+        <p style="color: orange;"><b>Contributions:</b></p>
+
+        <li><b>Project Lead</b></li>
+        <li><b>Producer</b></li>
+        <li>Implemented Shop interaction and UI</li>
+        <li>Worked on seed collection</li>
+        <li>Implemented extra purchasable farm plots</li>
+        <li>Worked on player economy</li>
+        </div>
+
+        
+    </div>
+
+</body>
 </html>
