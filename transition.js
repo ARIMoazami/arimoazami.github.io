@@ -18,7 +18,7 @@ if (navigation.addEventListener) {
                     });
 
                     transition.ready.then(() => {
-                        window.scrollTo(0.0);
+                        window.scrollTo(0, 0);
                     });
                 },
                 scroll: "manual",
