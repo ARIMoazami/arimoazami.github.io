@@ -39,7 +39,18 @@ function closeSidebar(){
   navbar.setAttribute('inert', '')
 
   const overflow = document.querySelector('body');
-  overflow.style.overflow = 'visible'
+  checkPage();
+}
+
+function checkPage(){
+  const overflow = document.querySelector('body');
+
+  if(document.getElementById('homeBody')){
+    overflow.style.overflow = 'hidden'
+  }
+  else{
+     overflow.style.overflow = 'visible'
+  }
 }
 
 const navLinks = document.querySelectorAll('nav a')

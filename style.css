@@ -23,6 +23,14 @@ body{
     padding-bottom: 100px;
 }
 
+body.home{
+    min-height: 100vh;
+    background-color: #111;
+
+    padding-bottom: 100px;
+    overflow: hidden;
+}
+
 nav {
     background-color: #111;
     z-index: 100;
@@ -172,8 +180,6 @@ nav a.accent-link{
         margin-right: unset;
         border-bottom: none;
     }
-
-   
 }
 
 .links {
@@ -369,7 +375,7 @@ img{
 .social{
    position: absolute;
    left: -135px;
-   bottom: 20px;
+   bottom: 50px;
    z-index: 10;
    display: flex;
    justify-content: center;
@@ -764,5 +770,10 @@ button:active {
     .row .col:nth-child(2){
         margin-top: 30px;
     }
+
+    .social{
+        bottom: -10px;
+    }
+   
 
 }
