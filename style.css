@@ -516,6 +516,111 @@ img{
     opacity: 1;
 }
 
+#skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--text-color);
+}
+
+.skills-top{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skills-top>p:nth-child(1){
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.skills-top>p:nth-child(2){
+    font-size: clamp(1.8rem, 1.0500rem + 3.3333vw, 2.8rem);
+    font-weight: 600;
+    max-width: 80%;
+    align-self: center;
+}
+
+.skills-bottom{
+    padding: 110px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill {
+    flex: 22%;
+    background-color: #383838;
+    display: flex;
+    align-items: center;
+    padding: 18px;
+    border-radius: 10px;
+    gap: 15px;
+    position: relative;
+}
+
+.skill-icon{
+    width: 45px;
+    height: 45px;
+}
+
+.skill-icon img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.UE{
+    background-color: #630c0c;
+}
+.Unity{
+    background-color: #575757;
+}
+.Godot{
+    background-color: #3a719b;
+}
+.Blender{
+    background-color: #bb5e01;
+}
+.Maya{
+    background-color: #2596be;
+}
+.CPlusPlus{
+    background-color: #014a92;
+}
+.CSharp{
+    background-color: #390091;
+}
+.Python{
+    background-color: #af9538;
+}
+.HTML{
+    background-color: #af4919;
+}
+.Perforce{
+    background-color: #270672;
+}
+.Jira{
+    background-color: #054fbd;
+}
+.Excel{
+    background-color: #145834;
+}
+.Github{
+    background-color: #aaaaaa;
+}
+.Miro{
+    background-color: #322636;
+}
+.VS{
+    background-color: #705094;
+}
+.Gimp{
+    background-color: #574b2e;
+}
+
+
+
 .skills{
     background-color: #111;
 }
@@ -761,6 +866,30 @@ button:active {
   right: -20px;
   top: -55px;
 }
+
+.tag{
+  width: 50px;
+  font-size: 14px;
+  position: absolute;
+  left: 0px;
+  top: -20px;
+  z-index: 100;
+}
+
+.tagText{
+  width: 60px;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 5px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  text-align: center;
+  background-color: #6200ff;
+  color: rgb(255, 255, 255);
+  z-index: 100;
+}
+
 
 @media(max-width: 750px){
 
