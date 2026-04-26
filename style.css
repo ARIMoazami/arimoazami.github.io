@@ -8,6 +8,18 @@
     --bb-color: #383838;
 }
 
+::-webkit-scrollbar{
+    background: #383838;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #575757;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #8b8b8b;
+}
 * {
     margin: 0;
     padding: 0;
@@ -285,10 +297,19 @@ nav a.accent-link{
     align-items: center;
 }
 
+.wrapper a{
+    text-decoration: none;
+}
 
 .image{
-    width: 600px;
+    width: 450px;
     position: relative;
+}
+
+.image:hover{
+    .contentProject{
+        background-color: #3f3f3f;
+    }
 }
 
 img{
@@ -334,12 +355,40 @@ img{
     opacity: 1;
 }
 
+.contentProject {
+    background-color: #292929;
+
+    transition: 0.25s ease-in-out;
+}
+
+.contentProject h1{
+    text-align: center;
+    font-size: 20px;
+
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.contentProject p{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+    font-size: 15px;
+}
+
 .text{
     position: relative;
     z-index: 10;
 }
 
 .text1{
+    position: relative;
+    z-index: 10;
+    padding-bottom: 10px;
+}
+
+.textProject{
     position: relative;
     z-index: 10;
     padding-bottom: 10px;
@@ -436,6 +485,16 @@ img{
     top: 50px;
     left: 50px;
 
+}
+
+.textProject h2{
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 1em;
+
+    padding: 40px;
+
+    color: #fff;
 }
 
 .text1 h2{
@@ -543,7 +602,7 @@ img{
 }
 
 .skills-bottom{
-    padding: 110px;
+    padding: 100px;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -816,49 +875,6 @@ button:active {
     opacity: 0.8;
 }
 
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 100000; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-  background-color: #26262a;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-.modal p{
-    color: #fff;
-}
-
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
 .ribbon{
   width: 120px;
   font-size: 14px;
@@ -890,6 +906,56 @@ button:active {
   z-index: 100;
 }
 
+.projectWork video
+{
+    width: 55%;
+    height: 60%;
+
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+    margin-top: 15px;
+
+}
+
+.projectWork .text2{
+    color: #fff;
+    font-size: 1.2em;
+
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.projectWork p{
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+
+.projectWork a{
+    text-decoration: none;
+    color: #111;
+    background-color: #bababa;
+    border: none;
+    padding: 20px;
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    font-weight: 600;
+  
+    border-radius: 50px;
+    margin-top: 20px;
+
+    transition: 0.3s;
+}
+
+.projectWork a:hover{
+     font-size: 20px;
+         background-color: #ffab00;
+}
 
 @media(max-width: 750px){
 
@@ -899,10 +965,37 @@ button:active {
     .row .col:nth-child(2){
         margin-top: 30px;
     }
-
     .social{
         bottom: -10px;
     }
-   
+    .skills-bottom{
+        padding: 55px;
+    }
+
+
+    .projectWork video{
+    width: 85%;
+    height: 70%;
+
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+    margin-top: 15px;
+    }
+    .projectWork .text2{
+        font-size: 1em;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .textProject h2{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1em;
+
+    padding-left: 30px;
+
+    color: #fff;
+}
 
 }
