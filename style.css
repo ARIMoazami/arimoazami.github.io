@@ -43,6 +43,10 @@ body.home{
     overflow: hidden;
 }
 
+body.about{
+    padding-bottom: 0px;
+}
+
 nav {
     background-color: #111;
     z-index: 100;
@@ -153,7 +157,7 @@ nav a.accent-link{
     outline: 3px solid #ffff;
 }
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 820px){
     #open-sidebar-button, #close-sidebar-button{
         display: block;
     }
@@ -191,6 +195,15 @@ nav a.accent-link{
     nav .home-li-active{
         margin-right: unset;
         border-bottom: none;
+    }
+
+    body.about{
+        overflow: scroll;
+    }
+
+    .socialAbout{
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -575,6 +588,36 @@ img{
     opacity: 1;
 }
 
+.socialAbout{
+    width: 100%;
+    padding: 60px;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    background-color: #111;
+}
+
+.icon{
+    width: 205px;
+    height: 100px;
+    border-radius: 100px;
+    background: #111;
+    margin: 20px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 100px;
+    font-family: sans-serif;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px 5px rgba(150, 150, 150, .3);
+
+    transition: .4s ease-in-out;
+}
+
+.icon:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 10px rgb(194, 129, 0, 1)
+}
+
 #skills{
     display: flex;
     flex-direction: column;
@@ -602,7 +645,11 @@ img{
 }
 
 .skills-bottom{
-    padding: 100px;
+    padding-top: 30px;
+    padding-bottom: 90px;
+    padding-left: 100px;
+    padding-right: 100px;
+
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -824,7 +871,7 @@ main.row{
 
 .portfolioWork a:hover{
      font-size: 20px;
-         background-color: #ffab00;
+     background-color: #ffab00;
 }
 
 .filters {
@@ -927,6 +974,14 @@ button:active {
     padding-right: 250px;
 }
 
+.projectWork .text3{
+    color: #fff;
+    font-size: 1.2em;
+
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
 .projectWork p{
     margin-bottom: 10px;
     margin-top: 25px;
@@ -957,7 +1012,7 @@ button:active {
          background-color: #ffab00;
 }
 
-@media(max-width: 750px){
+@media(max-width: 820px){
 
      main.row{
         grid-template-columns: 1fr;
@@ -988,6 +1043,12 @@ button:active {
         padding-left: 50px;
         padding-right: 50px;
     }
+    .projectWork .text3{
+        font-size: 1em;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
     .textProject h2{
     font-size: 3rem;
     font-weight: 700;
@@ -996,6 +1057,6 @@ button:active {
     padding-left: 30px;
 
     color: #fff;
-}
+    }
 
 }
