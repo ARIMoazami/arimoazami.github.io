@@ -166,7 +166,7 @@ nav a.accent-link{
         position: fixed;
         top: 0;
         right: -100%;
-        height: 100vh;
+        height: 300vh;
         width: min(15em, 100%);
         z-index: 200;
         border: left 1px solid var(--hover-color);
@@ -206,6 +206,61 @@ nav a.accent-link{
         align-items: center;
     }
 }
+
+@media screen and (max-width: 460px){
+    #open-sidebar-button, #close-sidebar-button{
+        display: block;
+    }
+
+    nav{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 300vh;
+        width: min(15em, 100%);
+        z-index: 200;
+        border: left 1px solid var(--hover-color);
+        transition: right 300ms ease-out;
+    }
+    nav.show{
+        right: 0;
+    }
+    nav.show ~ #overlay{
+        display: block;
+    }
+    nav ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    nav a{
+        width: 100%;
+        padding-left: 2.5em;
+    }
+    nav a.active-link{
+        border-bottom: none;
+    }
+    nav .home-li{
+        margin-right: unset;
+    }
+    nav .home-li-active{
+        margin-right: unset;
+        border-bottom: none;
+    }
+
+    body.about{
+        overflow: scroll;
+    }
+
+    .socialAbout{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+  
+}
+
+
 
 .links {
     display: flex;
