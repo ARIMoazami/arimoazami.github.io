@@ -1000,7 +1000,7 @@ button:active {
 .projectWork a{
     text-decoration: none;
     color: #111;
-    background-color: #bababa;
+    background-color: #ffab00;
     border: none;
     padding: 20px;
     text-align: center;
@@ -1018,8 +1018,8 @@ button:active {
 }
 
 .projectWork a:hover{
-     font-size: 20px;
-         background-color: #ffab00;
+    font-size: 20px;
+    background-color: #ffab00;
 }
 
 @media(max-width: 820px){
