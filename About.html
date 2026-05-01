@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <title>About - Alireza Moazami</title>
     <script src="sidebar.js" defer></script>
-    <script src="refresh.js"></script>
     <link rel="icon" type="image/x-icon" href="images/DevIcon.png">
 </head>
 <body class="about">
@@ -82,6 +81,14 @@
         function redirectIt(obj){
         var goToLink = obj.getAttribute("href");
         window.location.href=goToLink;
+        }
+    </script>
+
+    <script>
+        window.addEventListener("popstate", reload());
+
+        function reload(){
+            window.location.reload();
         }
     </script>
 
