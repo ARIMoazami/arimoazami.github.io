@@ -86,9 +86,14 @@
 
     <script>
         window.addEventListener("popstate", reload());
+        var exectuted = false;
+
 
         function reload(){
-            window.location.reload();
+            if (!exectuted) {
+                exectuted = true;
+                window.location.reload();
+            }
         }
     </script>
 
