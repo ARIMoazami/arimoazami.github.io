@@ -412,7 +412,6 @@ img{
 
 .contentProject {
     background-color: #292929;
-
     transition: 0.25s ease-in-out;
 }
 
@@ -1117,6 +1116,11 @@ button:active {
 
     .text1 h2{
         font-size: 3.5rem;
+    }
+
+    .grid-container-sc .wrapper{
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
 }
