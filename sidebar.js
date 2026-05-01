@@ -1,0 +1,63 @@
+const openButton = document.getElementById('open-sidebar-button')
+const navbar = document.getElementById('navbar')
+
+const media = window.matchMedia("(width < 750px)")
+
+media.addEventListener('change', (e) => updateNavbar(e))
+
+function updateNavbar(e){
+  const isMobile = e.matches
+  //console.log(isMobile)
+  if(isMobile){
+    navbar.setAttribute('inert', '')
+  }
+  else{
+    navbar.removeAttribute('inert')
+  }
+
+  if(navbar.classList.contains('show') && window.screen.width > 750)
+  {
+    closeSidebar();
+  }
+  else{
+    
+  }
+}
+
+function openSidebar(){
+  navbar.classList.add('show')
+  openButton.setAttribute('aria-expanded', 'true')
+  navbar.removeAttribute('inert')
+
+  const overflow = document.querySelector('body');
+  overflow.style.overflow = 'hidden'
+}
+
+function closeSidebar(){
+  navbar.classList.remove('show')
+  openButton.setAttribute('aria-expanded', 'false')
+  navbar.setAttribute('inert', '')
+
+  const overflow = document.querySelector('body');
+  checkPage();
+}
+
+function checkPage(){
+  const overflow = document.querySelector('body');
+
+  if(document.getElementById('homeBody')){
+    overflow.style.overflow = 'hidden'
+  }
+  else{
+     overflow.style.overflow = 'visible'
+  }
+}
+
+const navLinks = document.querySelectorAll('nav a')
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    closeSidebar()
+  })
+})
+
+updateNavbar(media)
