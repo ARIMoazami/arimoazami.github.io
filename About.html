@@ -9,8 +9,17 @@
     <script src="sidebar.js" defer></script>
     <link rel="icon" type="image/x-icon" href="images/DevIcon.png">
 
-    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
-    <META HTTP-EQUIV="Expires" CONTENT="-1">
+    <script>
+
+function reloadIt() {
+    if (window.location.href.substr(-2) !== "?r") {
+        window.location = window.location.href + "?r";
+    }
+}
+
+setTimeout('reloadIt()', 1000)();
+
+</script>
 
 </head>
 <body class="about">
